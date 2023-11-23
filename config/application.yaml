@@ -1,0 +1,11 @@
+server:
+  port: 8081
+datasource:
+  driverName: mysql
+  host: 127.0.0.1
+  port: 3306
+  database: gin_demo
+  username: gin_demo
+  password: gin_demo
+  charset: utf8mb4
+  loc: Asia/Shanghai
