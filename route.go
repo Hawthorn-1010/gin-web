@@ -1,8 +1,8 @@
 package main
 
 import (
-	"01-quickstart/controller"
-	"01-quickstart/middleware"
+	"gin-web/controller"
+	"gin-web/middleware"
 	"github.com/gin-gonic/gin"
 )
 

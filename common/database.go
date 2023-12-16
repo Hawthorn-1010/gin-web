@@ -1,8 +1,8 @@
 package common
 
 import (
-	"01-quickstart/model"
 	"fmt"
+	"gin-web/model"
 	"github.com/jinzhu/gorm"
 	"github.com/spf13/viper"
 	"net/url"

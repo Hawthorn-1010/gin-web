@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"01-quickstart/common"
-	"01-quickstart/model"
+	"gin-web/common"
+	"gin-web/model"
 	"github.com/jinzhu/gorm"
 )
 

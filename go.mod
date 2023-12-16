@@ -1,4 +1,4 @@
-module 01-quickstart
+module gin-web
 
 go 1.18
 

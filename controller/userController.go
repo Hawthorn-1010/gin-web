@@ -1,11 +1,11 @@
 package controller
 
 import (
-	"01-quickstart/common"
-	"01-quickstart/dto"
-	"01-quickstart/model"
-	"01-quickstart/response"
-	"01-quickstart/util"
+	"gin-web/common"
+	"gin-web/dto"
+	"gin-web/model"
+	"gin-web/response"
+	"gin-web/util"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"log"

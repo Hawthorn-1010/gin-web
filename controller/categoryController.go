@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"01-quickstart/model"
-	"01-quickstart/repository"
-	"01-quickstart/response"
-	"01-quickstart/vo"
+	"gin-web/model"
+	"gin-web/repository"
+	"gin-web/response"
+	"gin-web/vo"
 	"github.com/gin-gonic/gin"
 	"strconv"
 )

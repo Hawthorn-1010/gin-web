@@ -1,7 +1,7 @@
 package common
 
 import (
-	"01-quickstart/model"
+	"gin-web/model"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )

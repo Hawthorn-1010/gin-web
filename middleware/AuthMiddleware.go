@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"01-quickstart/common"
-	"01-quickstart/model"
+	"gin-web/common"
+	"gin-web/model"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"

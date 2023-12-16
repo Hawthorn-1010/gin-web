@@ -1,7 +1,7 @@
 package main
 
 import (
-	"01-quickstart/common"
+	"gin-web/common"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 	_ "gorm.io/driver/mysql"

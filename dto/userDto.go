@@ -1,6 +1,6 @@
 package dto
 
-import "01-quickstart/model"
+import "gin-web/model"
 
 type UserDto struct {
 	Name      string `json:"name"`

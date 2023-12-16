@@ -2,7 +2,7 @@ server:
   port: 8080
 datasource:
   driverName: mysql
-  host: hostname
+  host: your_hostname
   port: 3306
   database: books
   username: your_username
