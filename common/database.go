@@ -2,14 +2,30 @@ package common
 
 import (
 	"01-quickstart/model"
+	"fmt"
 	"github.com/jinzhu/gorm"
+	"github.com/spf13/viper"
+	"net/url"
 )
 
 var DB *gorm.DB
 
 func InitDB() *gorm.DB {
-	dsn := "root:root@tcp(192.168.255.3:3306)/books?parseTime=true"
-	db, err := gorm.Open("mysql", dsn)
+	driverName := viper.GetString("datasource.driverName")
+	host := viper.GetString("datasource.host")
+	port := viper.GetString("datasource.port")
+	database := viper.GetString("datasource.database")
+	username := viper.GetString("datasource.username")
+	password := viper.GetString("datasource.password")
+	loc := viper.GetString("datasource.loc")
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true&loc=%s",
+		username,
+		password,
+		host,
+		port,
+		database,
+		url.QueryEscape(loc))
+	db, err := gorm.Open(driverName, dsn)
 	if err != nil {
 		panic("failed to connect database" + err.Error())
 	}
